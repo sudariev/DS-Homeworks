@@ -1,0 +1,214 @@
+.body {
+    position: absolute;
+    width: 1280px;
+    height: 1626px;
+    background: rgba(0, 0, 0, 0.0001);
+}
+.container {
+	width: 1280px; 	/* Сделали контейнер размером 1280  */
+	margin: 0 auto; /* Отцентровали контейнер наш по центру, это работает только в том случаи когда вы указываете  width  */
+    padding-bottom: 25.5px; /* делаем нижний отступ размером 25.5 */
+}
+
+.header .header-menu {
+	display: inline-block; /* делаем inline-block что бы блоки стали в ряд */
+	vertical-align: middle; /* Вертикальное выравнивание элемента, работает только при условии что у вас display:inline/inline-block */
+    margin-left: 25%; /* делаем отступ ввидел % что бы меньше заниматся матиматикой */
+}
+.header .header-menu .menu {
+    position: absolute;
+    width: 620px;
+    height: 15px;
+    left: 330px;
+    top: 31.5px;
+}
+
+.header .menu .menu-list {
+	padding: 0; 
+	margin: 0 -34px;
+	/*
+	http://prntscr.com/1s4ph2r
+	http://prntscr.com/1s4pi8l
+	Когда мы нашим элементам задали отступы 34px
+	то они добавились каждому слева и справа.
+	но нам не нужны у элемента 1 с лева а у последнего с права
+	Для этого мы делаем минусовой margin: 0 -34px;
+	что бы убрать лишние, компенсировать
+	*/
+    /*
+http://prntscr.com/1s4o5vi у списка есть базовые свойства от браузера, они нам не нужны по этому их переписуем,
+padding: 0;	margin: 0;
+*/
+}
+
+.menu-item .link {
+    display: inline-block; /* делаем inline-block что бы все пункты меню стали в ряд */
+	vertical-align: middle; /* делаем выравнивание элементов по вертикали */
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1;
+    align-items: center;
+    letter-spacing: 2.7px;
+    text-decoration: none;
+    color: #FF0000;
+}
+.menu-item.home {
+    position: absolute;
+    width: 68px;
+    height: 27px;
+    left: 0px;
+    top: -6px;
+}
+.menu-item.photoapp {
+    position: absolute;
+    width: 131px;
+    height: 27px;
+    left: 140px;
+    top: -6px;
+}
+.menu-item.design {
+    position: absolute;
+    width: 87px;
+    height: 27px;
+    left: 343px;
+    top: -6px;
+}
+.menu-item.download {
+    position: absolute;
+    width: 140px;
+    height: 27px;
+    left: 480px;
+    top: -6px;
+}
+.home,
+.photoapp,
+.design,
+.download {
+    list-style: none;
+}
+.image {
+    position: absolute;
+    width: 1280px;
+    left: 0px;
+    top: 70px;
+}
+.section-container {
+    position: absolute;
+    width: 1280px;
+    height: 650px;
+    top: 868px;
+    /* left: calc(50% - 1280px/2); */
+    bottom: 108px;
+    background: rgba(0, 0, 0, 0.0001);
+}
+.section-container .section-title {
+    position: absolute;
+    width: 774px;
+    height: 29px;
+    left: 253px;
+    top: 48px;
+    font-size: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    vertical-align: middle;
+    letter-spacing: 3.3px;
+    text-transform: uppercase;
+    color: #373737;
+}
+
+.section-container .section-content .content-text1 {
+    position: absolute;
+    width: 1145px;
+    height: 132px;
+    left: 67.5px;
+    top: 115px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 2.4px;
+    color: #373737;
+}
+.section-container .section-content .content-text2 {
+    position: absolute;
+    width: 1145px;
+    height: 216px;
+    left: 67.5px;
+    top: 275px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 2.4px;
+    color: #373737;
+}
+.section-container .section-content .button-wrap {
+    position: absolute;
+    width: 191px;
+    height: 51px;
+    left: 544.5px;
+    top: 557px;
+    background: #FF0000;
+    border-radius: 4px;
+}
+.section-content .button-wrap .button {
+    position: absolute;
+    width: 105px;
+    height: 16px;
+    top: calc(575px - 557px);
+    left: calc(587px - 544.5px);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.section-footer {
+    position: absolute;
+    width: 1070px;
+    height: 39px;
+    top: 689px;
+    left: 105px;
+    right: 105px;
+    bottom: 29px;
+}
+.section-footer .credits {
+    position: absolute;
+    visibility: hidden;
+    width: 382px;
+    height: 16px;
+    left: 0.5px;
+    top: -41px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    color: #373737;
+}
+
+.section-footer .footer-content {
+    position: absolute;
+    width: 462px;
+    height: 39px;
+    left: 608px;
+    top: 0px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 2.4px;
+    color: #373737;
+}
